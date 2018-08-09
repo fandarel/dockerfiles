@@ -45,8 +45,8 @@ if [ "$USE_SSL" != "" ]; then
     ssl_val=true
 fi
 cat > /hibiscus-server/cfg/de.willuhn.jameica.webadmin.Plugin.properties <<EOF
-listener.http.address=0.0.0.0
-listener.http.port=${PORT-8080}
+listener.http.address=192.168.172.2
+listener.http.port=${PORT-8888}
 listener.http.auth=true
 listener.http.ssl=${ssl_val}
 EOF
